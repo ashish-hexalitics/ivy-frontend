@@ -1,0 +1,97 @@
+/* Customize the label (the container) */
+.container {
+  /* display: block; */
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
+/* Hide the browser's default checkbox */
+.container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  /* position: absolute; */
+  /* top: 3px;
+  left: -1px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #fefefe;
+  box-shadow: 0px 0px 12px rgba(37, 34, 56, 0.12);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input[type="checkbox"] ~ .checkmark {
+  background: #fefefe;
+  box-shadow: 0px 0px 12px rgba(37, 34, 56, 0.12);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input[type="checkbox"]:checked ~ .checkmark {
+  background: #fefefe;
+  box-shadow: 0px 0px 12px rgba(37, 34, 56, 0.12);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  /* background-color: rebeccapurple; */
+}
+
+/* Show the checkmark when checked */
+.container input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  /* left: 8px;
+  top: 4px; */
+  /* position: absolute;
+  top: 50%;
+  bottom: 50%; */
+  width: 6px;
+  height: 12px;
+  border: solid #5131d7;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.label-text {
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+}

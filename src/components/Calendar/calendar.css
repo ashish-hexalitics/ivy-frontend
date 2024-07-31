@@ -1,0 +1,51 @@
+.fc-h-event {
+	background-color: transparent;
+	border: 0 solid transparent;
+}
+
+.fc .fc-button-primary {
+	background-color: #532fd9;
+	color: white;
+	border-color: #532fd9;
+	font-size: 12px !important;
+}
+
+.fc .fc-button-primary:hover {
+	background-color: #532fd9;
+	color: white;
+	border-color: #532fd9;
+}
+
+.fc .fc-button-primary:focus {
+	box-shadow: none;
+}
+
+.fc .fc-button:focus {
+	box-shadow: none;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+	background-color: #efeafe !important;
+	color: #532fd9;
+	border-color: #532fd9;
+}
+
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion,
+.fc-daygrid-more-link {
+	font-size: 12px !important;
+}
+
+.fc-day-today > .fc-daygrid-day-frame {
+	background-color: #efeafe;
+}
+
+.tab-date {
+	font-size: 12px !important;
+}
+
+.tab-address {
+	font-size: 12px !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
