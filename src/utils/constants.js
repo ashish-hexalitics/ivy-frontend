@@ -1,7 +1,7 @@
 import { green } from "@mui/material/colors";
 
 // export const API_URL = "https://ivy.studiorav.co.uk/api";
-export const API_URL = "http://localhost:8890/api";
+export const API_URL = "http://ec2-13-60-190-85.eu-north-1.compute.amazonaws.com:8890/api";
 
 export const X_API_KEY = "1234567891";
 
