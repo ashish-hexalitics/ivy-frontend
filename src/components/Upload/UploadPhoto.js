@@ -1,4 +1,4 @@
-import { photo_bw, upload_photo } from "../../assets";
+import { photo_bw, upload_photo,logo } from "../../assets";
 import { DeleteForeverRounded } from "@mui/icons-material";
 import AlertDialog from "../AlertDialog";
 import React from "react";
@@ -104,8 +104,13 @@ const UploadPhoto = ({
                   </button>
                 )}
                 <div className={"px-4 py-2"}>
-                  <img
+                  {/* <img
                     src={form[itemName] ? form[itemName] : photo_bw}
+                    alt="photo_bw"
+                    className="max-h-[140px] rounded-lg"
+                  /> */}
+                  <img
+                    src={form[itemName] ? logo : photo_bw}
                     alt="photo_bw"
                     className="max-h-[140px] rounded-lg"
                   />

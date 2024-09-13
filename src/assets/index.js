@@ -1,4 +1,6 @@
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
+
 import screen1 from "../assets/screen1.png";
 import key from "../assets/key.svg";
 import eye from "../assets/eye.svg";
